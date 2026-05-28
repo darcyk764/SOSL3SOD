@@ -1,9 +1,30 @@
 <template>
-  <section class="bg-white shadow-sm rounded-lg p-6 text-center">
-    <h2 class="text-2xl font-semibold text-gray-800">Image</h2>
-    <p class="mt-2 text-gray-600">Here is the image page, showing the same logo used in the navbar.</p>
-    <div class="mt-6 flex justify-center">
-      <img src="/logo.svg" alt="Tembera logo" class="w-80 h-auto rounded-lg border" />
+  <section class="bg-white p-4 rounded shadow">
+
+    <!-- IMAGES -->
+    <div v-if="route.query.type === 'images'">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">
+        Gallery Images
+      </h2>
+
+      <div class="grid grid-cols-2 gap-4">
+        <img src="" class="rounded-lg w-full" />
+        <img src="" class="rounded-lg w-full" />
+      </div>
     </div>
+
+    <!-- VIDEOS (TEXT ONLY) -->
+    <div v-else-if="route.query.type === 'videos'">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">
+        Video Gallery
+      </h2>
+    </div>
+
   </section>
 </template>
+
+<script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+</script>

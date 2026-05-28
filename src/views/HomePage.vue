@@ -1,6 +1,12 @@
+<script setup></script>
 <template>
-  <section class="bg-white shadow-sm rounded-lg p-6">
-    <h2 class="text-2xl font-semibold text-gray-800">Home</h2>
-    <p class="mt-2 text-gray-600">Welcome to the home page of your Vue app. Use the navbar to navigate to the contact page or image page.</p>
-  </section>
+<div  class="max-w-9x1 mx-auto px-4 py-3 flex items-center justify-center text-blue">
+     <p class="text-x3 font-bold text-green-500 items-center ">WELCOME TO RWANDA</p>
+     
+</div>
+<section class="relative h-screen bg-cover bg-center flex items-center justify-center  text-white "
+style="background-image: url('/src/assets/mountain.png');"
+>
+   
+</section>
 </template>

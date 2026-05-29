@@ -45,7 +45,7 @@
             <button
               class="px-4 py-2 rounded-lg hover:bg-white/20 transition duration-300"
             >
-              Destinations
+              Destinations v
             </button>
 
             <!-- DROPDOWN -->
@@ -77,7 +77,7 @@
             <button
               class="px-4 py-2 rounded-lg hover:bg-white/20 transition duration-300"
             >
-              Gallery
+              Gallery v 
             </button>
 
             <!-- DROPDOWN -->

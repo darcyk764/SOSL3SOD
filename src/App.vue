@@ -7,6 +7,7 @@
       <!-- LOGO -->
       <div class="flex items-center gap-3">
         <img src="/logo.svg" alt="Logo" class="w-9 h-9" />
+
         <h1 class="text-xl font-bold tracking-wide">
           TEMBERA RWANDA
         </h1>
@@ -119,8 +120,8 @@ const provinces = [
 const goToProvince = (province) => {
   router.push(`/destinations?province=${province.id}`)
 }
+
 const goToGallery = (type) => {
   router.push(`/gallery?type=${type}`)
 }
-
 </script>

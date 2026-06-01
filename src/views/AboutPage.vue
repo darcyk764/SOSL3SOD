@@ -1,129 +1,361 @@
 <template>
-  <section class="max-w-6xl mx-auto px-6 py-14">
+  <section class="bg-gray-50">
 
-    <!-- HEADER -->
-    <div class="text-center mb-12">
-      <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs">
-      
-      </span>
+    <!-- HERO -->
+    <div
+      class="relative h-[80vh] flex items-center justify-center overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        alt="Rwanda"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
 
-      <h2 class="text-5xl font-extrabold text-green-700 mt-4">
-        About Rwanda
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative text-center text-white px-6">
+
+        <p
+          class="uppercase tracking-[8px] text-green-400 text-sm md:text-lg"
+        >
+          Discover Rwanda
+        </p>
+
+        <h1
+          class="text-6xl md:text-8xl font-black mt-4"
+        >
+          ABOUT RWANDA
+        </h1>
+
+        <p
+          class="max-w-3xl mx-auto mt-6 text-lg md:text-2xl text-gray-200"
+        >
+          Learn about the beauty, culture, wildlife,
+          and tourism experiences that make Rwanda one
+          of Africa’s most exciting destinations.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- INTRO -->
+    <div class="max-w-7xl mx-auto px-6 py-24">
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <div>
+
+          <h2
+            class="text-5xl font-black text-green-700 mb-6"
+          >
+            The Land of a Thousand Hills
+          </h2>
+
+          <p
+            class="text-gray-600 text-lg leading-relaxed"
+          >
+            Rwanda is known worldwide for its breathtaking
+            landscapes, clean cities, rich culture and
+            extraordinary wildlife experiences.
+          </p>
+
+          <p
+            class="text-gray-600 text-lg leading-relaxed mt-6"
+          >
+            From volcanoes and rainforests to lakes and
+            savannahs, Rwanda offers unforgettable
+            adventures for every traveler.
+          </p>
+
+        </div>
+
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1516426122078-c23e76319801"
+            class="rounded-[40px] shadow-2xl h-[500px] w-full object-cover"
+          />
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FACTS -->
+    <div class="max-w-7xl mx-auto px-6 pb-24">
+
+      <h2
+        class="text-center text-5xl font-black text-green-700 mb-14"
+      >
+        Rwanda At A Glance
       </h2>
 
-      <p class="text-gray-600 mt-4 max-w-3xl mx-auto text-lg">
-        A modern tourism platform designed to showcase Rwanda’s beauty through destinations,
-        culture, wildlife, and travel experiences.
-      </p>
-    </div>
+      <div class="grid md:grid-cols-4 gap-8">
 
-    <!-- INTRO CARD + SMALL IMAGE -->
-    <div class="grid md:grid-cols-2 gap-10 items-center mb-12">
+        <div
+          class="bg-white rounded-3xl p-8 shadow-lg text-center"
+        >
+          <div class="text-5xl mb-4">
+            🌍
+          </div>
 
-      <!-- TEXT -->
-      <div class="bg-green-50 p-8 rounded-3xl shadow-sm">
-        <h3 class="text-2xl font-bold text-green-700 mb-3">
-          Our Purpose
-        </h3>
+          <h3 class="font-bold text-xl">
+            Location
+          </h3>
 
-        <p class="text-gray-600 leading-relaxed">
-          Tembera U Rwanda was created to make tourism in Rwanda easier to explore digitally.
-          It brings together destinations, nature, and cultural experiences into one simple platform.
-        </p>
-
-        <p class="text-gray-600 leading-relaxed mt-4">
-          From mountains to lakes, forests to wildlife parks, Rwanda offers unique experiences
-          that this platform helps users discover in a modern and visual way.
-        </p>
-      </div>
-
-      <!-- SMALL IMAGE -->
-      <div class="rounded-3xl overflow-hidden shadow-lg">
-        <img
-          src="https://images.unsplash.com/photo-1516426122078-c23e76319801"
-          class="w-full h-[260px] object-cover"
-          alt="Rwanda nature"
-        />
-      </div>
-
-    </div>
-
-    <!-- FEATURES -->
-    <div class="grid md:grid-cols-3 gap-6 mb-12">
-
-      <div class="bg-white shadow-md rounded-3xl p-6 hover:shadow-xl transition">
-        <h3 class="text-green-700 font-bold text-xl">🌍 Tourism Focus</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Discover Rwanda’s destinations, parks, lakes, and cultural sites.
-        </p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-3xl p-6 hover:shadow-xl transition">
-        <h3 class="text-green-700 font-bold text-xl">📸 Visual Experience</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Clean image-based storytelling for better exploration.
-        </p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-3xl p-6 hover:shadow-xl transition">
-        <h3 class="text-green-700 font-bold text-xl">⚡ Modern UI</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Built with Vue.js and Tailwind CSS for speed and responsiveness.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- RWANDA FACTS -->
-    <div class="mb-12">
-
-      <h3 class="text-3xl font-bold text-green-700 text-center mb-8">
-        Why Rwanda?
-      </h3>
-
-      <div class="grid md:grid-cols-3 gap-6">
-
-        <div class="p-6 bg-green-50 rounded-2xl">
-          <h4 class="text-green-700 font-bold">🌄 Land of Hills</h4>
-          <p class="text-gray-600 text-sm mt-2">
-            Famous for its green hills and stunning landscapes.
+          <p class="text-gray-600 mt-3">
+            East Africa
           </p>
         </div>
 
-        <div class="p-6 bg-green-50 rounded-2xl">
-          <h4 class="text-green-700 font-bold">🦍 Wildlife</h4>
-          <p class="text-gray-600 text-sm mt-2">
-            Home to gorillas, lions, elephants, and diverse wildlife.
+        <div
+          class="bg-white rounded-3xl p-8 shadow-lg text-center"
+        >
+          <div class="text-5xl mb-4">
+            👥
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Population
+          </h3>
+
+          <p class="text-gray-600 mt-3">
+            13 Million+
           </p>
         </div>
 
-        <div class="p-6 bg-green-50 rounded-2xl">
-          <h4 class="text-green-700 font-bold">🤝 Safe Country</h4>
-          <p class="text-gray-600 text-sm mt-2">
-            One of the safest and cleanest countries in Africa.
+        <div
+          class="bg-white rounded-3xl p-8 shadow-lg text-center"
+        >
+          <div class="text-5xl mb-4">
+            🦍
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Wildlife
+          </h3>
+
+          <p class="text-gray-600 mt-3">
+            Mountain Gorillas
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl p-8 shadow-lg text-center"
+        >
+          <div class="text-5xl mb-4">
+            🌄
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Landscapes
+          </h3>
+
+          <p class="text-gray-600 mt-3">
+            Hills & Volcanoes
           </p>
         </div>
 
       </div>
-    </div>
-
-    <!-- FINAL CTA -->
-    <div class="text-center bg-green-700 text-white rounded-3xl p-10">
-
-      <h3 class="text-3xl font-bold mb-3">
-        Start Exploring Rwanda Today
-      </h3>
-
-      <p class="text-gray-200 max-w-2xl mx-auto">
-        Discover destinations, culture, and nature through a simple and modern experience.
-      </p>
 
     </div>
 
-    <!-- FOOTER -->
-    <div class="text-center text-gray-500 text-sm mt-10">
-      Built with Vue.js & Tailwind CSS • Tembera U Rwanda Project
-    </div>
+    <!-- WHY VISIT -->
+    <section
+      class="bg-green-700 py-24"
+    >
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <h2
+          class="text-center text-5xl font-black text-white mb-14"
+        >
+          Why Visit Rwanda?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1516939884455-1445c8652f83"
+              class="h-64 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <h3
+                class="font-bold text-2xl text-green-700"
+              >
+                Safari Adventures
+              </h3>
+
+              <p
+                class="text-gray-600 mt-3"
+              >
+                Explore Akagera National Park and experience
+                Rwanda's famous wildlife.
+              </p>
+            </div>
+
+          </div>
+
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+              class="h-64 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <h3
+                class="font-bold text-2xl text-green-700"
+              >
+                Beautiful Lakes
+              </h3>
+
+              <p
+                class="text-gray-600 mt-3"
+              >
+                Relax along Lake Kivu and enjoy
+                breathtaking views.
+              </p>
+            </div>
+
+          </div>
+
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+              class="h-64 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <h3
+                class="font-bold text-2xl text-green-700"
+              >
+                Ancient Forests
+              </h3>
+
+              <p
+                class="text-gray-600 mt-3"
+              >
+                Discover Nyungwe Forest and its
+                incredible biodiversity.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="max-w-6xl mx-auto px-6 py-24">
+
+      <h2
+        class="text-center text-5xl font-black text-green-700 mb-16"
+      >
+        Rwanda Tourism Journey
+      </h2>
+
+      <div class="space-y-8">
+
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg"
+        >
+          <h3
+            class="text-2xl font-bold text-green-700"
+          >
+            Early Tourism
+          </h3>
+
+          <p
+            class="text-gray-600 mt-3"
+          >
+            Rwanda became known for its unique wildlife,
+            especially mountain gorillas.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg"
+        >
+          <h3
+            class="text-2xl font-bold text-green-700"
+          >
+            Modern Development
+          </h3>
+
+          <p
+            class="text-gray-600 mt-3"
+          >
+            Infrastructure and conservation efforts
+            transformed Rwanda into a world-class destination.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg"
+        >
+          <h3
+            class="text-2xl font-bold text-green-700"
+          >
+            Today
+          </h3>
+
+          <p
+            class="text-gray-600 mt-3"
+          >
+            Rwanda is one of Africa's fastest-growing
+            tourism destinations.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="bg-gradient-to-r from-green-700 to-green-500 text-white py-24"
+    >
+
+      <div
+        class="max-w-4xl mx-auto text-center px-6"
+      >
+
+        <h2
+          class="text-5xl md:text-6xl font-black"
+        >
+          Ready To Explore Rwanda?
+        </h2>
+
+        <p
+          class="mt-6 text-xl text-green-100"
+        >
+          Discover mountains, wildlife, lakes and
+          unforgettable experiences.
+        </p>
+
+        <button
+          class="mt-8 bg-white text-green-700 px-10 py-4 rounded-full font-bold hover:scale-105 transition"
+        >
+          Start Exploring
+        </button>
+
+      </div>
+
+    </section>
 
   </section>
 </template>
+
+<script setup>
+</script>
